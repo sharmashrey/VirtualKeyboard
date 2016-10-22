@@ -1,0 +1,70 @@
+<script> function moveNumbers(num) {
+    var txt=document.getElementById("result").value;
+    txt=txt + num;
+    document.getElementById("result").value=txt;
+    }
+    
+ function delete_num (num){
+ var field = document.getElementById("result");
+ field.value = field.value.slice(0, -1); //Extract from index 0 to the before-last character
+ phone_number.pop(); //Rmv last element.length is maintained by js itself.
+ return false; 
+ }
+ 
+</script>
+Keyboard: <br> 
+
+<div class="cont">
+<!--Row1 -->
+<input type="button" value="1" name="no" onclick="moveNumbers(this.value)">  
+<input type="button" value="2" name="no" onclick="moveNumbers(this.value)">  
+<input type="button" value="3" name="no" onclick="moveNumbers(this.value)">  
+<input type="button" value="4" name="no" onclick="moveNumbers(this.value)">  
+<input type="button" value="5" name="no" onclick="moveNumbers(this.value)">  
+<input type="button" value="6" name="no" onclick="moveNumbers(this.value)">
+<input type="button" value="7" name="no" onclick="moveNumbers(this.value)">  
+<input type="button" value="8" name="no" onclick="moveNumbers(this.value)">  
+<input type="button" value="9" name="no" onclick="moveNumbers(this.value)">  
+<input type="button" value="0" name="no" onclick="moveNumbers(this.value)">
+<!--Row2 -->
+</div>
+
+<div class="cont">
+<input type="button" value="q" name="no" onclick="moveNumbers(this.value)">  
+<input type="button" value="w" name="no" onclick="moveNumbers(this.value)">  
+<input type="button" value="e" name="no" onclick="moveNumbers(this.value)">  
+<input type="button" value="r" name="no" onclick="moveNumbers(this.value)">  
+<input type="button" value="t" name="no" onclick="moveNumbers(this.value)">  
+<input type="button" value="y" name="no" onclick="moveNumbers(this.value)">
+<input type="button" value="u" name="no" onclick="moveNumbers(this.value)">  
+<input type="button" value="i" name="no" onclick="moveNumbers(this.value)">  
+<input type="button" value="o" name="no" onclick="moveNumbers(this.value)">  
+<input type="button" value="p" name="no" onclick="moveNumbers(this.value)">
+<!--Row3 -->
+</div>
+<div class="cont">
+<input type="button" value="a" name="no" onclick="moveNumbers(this.value)">  
+<input type="button" value="s" name="no" onclick="moveNumbers(this.value)">  
+<input type="button" value="d" name="no" onclick="moveNumbers(this.value)">  
+<input type="button" value="f" name="no" onclick="moveNumbers(this.value)">  
+<input type="button" value="g" name="no" onclick="moveNumbers(this.value)">  
+<input type="button" value="h" name="no" onclick="moveNumbers(this.value)">
+<input type="button" value="j" name="no" onclick="moveNumbers(this.value)">  
+<input type="button" value="k" name="no" onclick="moveNumbers(this.value)">  
+<input type="button" value="l" name="no" onclick="moveNumbers(this.value)"> 
+</div>
+<!--Row4 -->
+<div class="cont">
+<input type="button" value="z" name="no" onclick="moveNumbers(this.value)">  
+<input type="button" value="x" name="no" onclick="moveNumbers(this.value)">  
+<input type="button" value="c" name="no" onclick="moveNumbers(this.value)">  
+<input type="button" value="v" name="no" onclick="moveNumbers(this.value)">  
+<input type="button" value="b" name="no" onclick="moveNumbers(this.value)">  
+<input type="button" value="n" name="no" onclick="moveNumbers(this.value)">
+<input type="button" value="m" name="no" onclick="moveNumbers(this.value)">  
+</div>
+<input type="button" value="backspace" name="no" onclick="delete_num(this.value)">
+
+<input type="text" id="result" size="20">
+
+</div>

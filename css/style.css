@@ -1,0 +1,11 @@
+
+.cont{
+    width:230px;
+    height:20px;
+    line-height:30px;
+    display: table;
+}
+
+.button{
+    display: table-cell;
+}
